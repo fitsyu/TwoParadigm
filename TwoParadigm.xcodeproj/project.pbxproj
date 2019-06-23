@@ -163,6 +163,8 @@
 		E8732EBF22BE4C92001F92FD /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				E8732EDE22BFB7FC001F92FD /* Story - MainStory.swift */,
+				E8732EB122BDE6D1001F92FD /* My Story.swift */,
 				E8732EBA22BE4C06001F92FD /* ViewingProducts */,
 				E8732EBD22BE4C52001F92FD /* Search */,
 				E8732EBE22BE4C5B001F92FD /* Filter */,
@@ -221,13 +223,10 @@
 		E8CB1B2222BDE33400E3FCEF = {
 			isa = PBXGroup;
 			children = (
-				E8732EE622BFDDD3001F92FD /* Repositories */,
 				E8CB1B4122BDE3A500E3FCEF /* main.swift */,
-				E8732EDE22BFB7FC001F92FD /* Story - MainStory.swift */,
-				E8732EB122BDE6D1001F92FD /* My Story.swift */,
-				E8732EDA22BF8FDA001F92FD /* PageZero.swift */,
-				E8732ED522BF8F32001F92FD /* Coordinators */,
 				E8732EBF22BE4C92001F92FD /* Stories */,
+				E8732EE622BFDDD3001F92FD /* Repositories */,
+				E8732ED522BF8F32001F92FD /* Coordinators */,
 				E8CB1B2D22BDE33400E3FCEF /* TwoParadigm */,
 				E8CB1B2C22BDE33400E3FCEF /* Products */,
 				7486A4B7A3E50333853F541E /* Pods */,
@@ -246,10 +245,11 @@
 		E8CB1B2D22BDE33400E3FCEF /* TwoParadigm */ = {
 			isa = PBXGroup;
 			children = (
-				E8732EAE22BDE58B001F92FD /* etc */,
 				E8732EAF22BDE5E5001F92FD /* App.swift */,
 				E8732EE022BFBBCF001F92FD /* AppDelegate.swift */,
+				E8732EDA22BF8FDA001F92FD /* PageZero.swift */,
 				E8732EC622BF35D4001F92FD /* Extensions.swift */,
+				E8732EAE22BDE58B001F92FD /* etc */,
 			);
 			path = TwoParadigm;
 			sourceTree = "<group>";
