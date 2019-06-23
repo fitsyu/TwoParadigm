@@ -11,4 +11,6 @@ target 'TwoParadigm' do
   pod 'RxSwift'
   pod 'RxCocoa'
   
+  pod 'PromisesSwift'
+  
 end
