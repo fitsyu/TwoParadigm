@@ -28,6 +28,9 @@
 		E8732EDD22BF9CDE001F92FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8732EDC22BF9CDE001F92FD /* AppCoordinator.swift */; };
 		E8732EDF22BFB7FC001F92FD /* Story - MainStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8732EDE22BFB7FC001F92FD /* Story - MainStory.swift */; };
 		E8732EE122BFBBCF001F92FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8732EE022BFBBCF001F92FD /* AppDelegate.swift */; };
+		E8732EE322BFD0AB001F92FD /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8732EE222BFD0AB001F92FD /* Repository.swift */; };
+		E8732EE522BFD988001F92FD /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8732EE422BFD988001F92FD /* Data.plist */; };
+		E8732EE822BFDDEE001F92FD /* ShopTypesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8732EE722BFDDEE001F92FD /* ShopTypesRepository.swift */; };
 		E8CB1B3922BDE33600E3FCEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CB1B3722BDE33600E3FCEF /* LaunchScreen.storyboard */; };
 		E8CB1B4222BDE3A500E3FCEF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB1B4122BDE3A500E3FCEF /* main.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,9 @@
 		E8732EDC22BF9CDE001F92FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E8732EDE22BFB7FC001F92FD /* Story - MainStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story - MainStory.swift"; sourceTree = "<group>"; };
 		E8732EE022BFBBCF001F92FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8732EE222BFD0AB001F92FD /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		E8732EE422BFD988001F92FD /* Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		E8732EE722BFDDEE001F92FD /* ShopTypesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTypesRepository.swift; sourceTree = "<group>"; };
 		E8CB1B2B22BDE33400E3FCEF /* TwoParadigm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoParadigm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CB1B3822BDE33600E3FCEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8CB1B3A22BDE33600E3FCEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -202,9 +208,20 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		E8732EE622BFDDD3001F92FD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E8732EE222BFD0AB001F92FD /* Repository.swift */,
+				E8732EE722BFDDEE001F92FD /* ShopTypesRepository.swift */,
+				E8732EE422BFD988001F92FD /* Data.plist */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		E8CB1B2222BDE33400E3FCEF = {
 			isa = PBXGroup;
 			children = (
+				E8732EE622BFDDD3001F92FD /* Repositories */,
 				E8CB1B4122BDE3A500E3FCEF /* main.swift */,
 				E8732EDE22BFB7FC001F92FD /* Story - MainStory.swift */,
 				E8732EB122BDE6D1001F92FD /* My Story.swift */,
@@ -298,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8732EE522BFD988001F92FD /* Data.plist in Resources */,
 				E8732EB622BE1735001F92FD /* ViewingProducts.xib in Resources */,
 				E8732EB822BE17C6001F92FD /* ProductCell.xib in Resources */,
 				E8732EC322BE61F1001F92FD /* ShopTypesView.xib in Resources */,
@@ -365,9 +383,11 @@
 				E8732EDD22BF9CDE001F92FD /* AppCoordinator.swift in Sources */,
 				E8732EC522BE6376001F92FD /* Story - MakingShopTypes.swift in Sources */,
 				E8732EE122BFBBCF001F92FD /* AppDelegate.swift in Sources */,
+				E8732EE822BFDDEE001F92FD /* ShopTypesRepository.swift in Sources */,
 				E8732ED722BF8F41001F92FD /* Coordinator.swift in Sources */,
 				E8732EB022BDE5E5001F92FD /* App.swift in Sources */,
 				E8732ECD22BF3963001F92FD /* ShopTypesViewController.swift in Sources */,
+				E8732EE322BFD0AB001F92FD /* Repository.swift in Sources */,
 				E8732EC922BF3903001F92FD /* ShopType.swift in Sources */,
 				E8732EDB22BF8FDA001F92FD /* PageZero.swift in Sources */,
 				E8732ECF22BF399F001F92FD /* ShopTypesSelectionView.swift in Sources */,

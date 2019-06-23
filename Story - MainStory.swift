@@ -48,17 +48,22 @@ extension MainStory: MakingShopTypesCoordinatorDelegate {
     func didStarted(viewController: ShopTypeViewController) {
         
         // Repository Pattern
-        let data = ShopTypeSelection(value: [
-            (ShopType(name: "Gold Merchant"), true),
-            (ShopType(name: "Official Store"), false),
-            ])
         
-        // let data = Data.access.DefaultShopTypeSelection
-        
-        let story  = MakingShopTypes(view: viewController)
-        story.data = data
-        story.delegate = self
-        story.begin()
+        ShopTypesRepository.shared
+            .fetch()
+            .then { shopTypes in
+            
+                let list = shopTypes.map {  ($0, false)  }
+                let data = ShopTypeSelection(value: list)
+                
+                let sideStory  = MakingShopTypes(view: viewController)
+                sideStory.data = data
+                sideStory.delegate = self
+                sideStory.begin()
+            }
+            .catch { error in
+                print("loading data failed with error: \(error)")
+            }
     }
 }
 
