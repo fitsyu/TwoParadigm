@@ -7,10 +7,11 @@ class RootCoordinator: Coordinator {
     
     var delegate: RootCoordinatorDelegate?
     
-    func start(from top: UIViewController?) {
-        fatalError("root should be root. no one go below it")
-    }
+    var window: UIWindow
     
+    init(window: UIWindow) {
+        self.window = window
+    }
     
     func start() {
         
@@ -18,10 +19,8 @@ class RootCoordinator: Coordinator {
         let page0 = Page0()
         
         // navigate
-        var window = UIApplication.shared.keyWindow
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = page0
-        window?.makeKeyAndVisible()
+        window.rootViewController = page0
+        window.makeKeyAndVisible()
         
         // done
         self.delegate?.didStarted(viewController: page0)
@@ -29,6 +28,11 @@ class RootCoordinator: Coordinator {
         // save
         presentee = page0
     }
+    
+    func start(from top: UIViewController?) {
+        fatalError("root should be root. no one go below it")
+    }
+
 }
 
 protocol RootCoordinatorDelegate {
