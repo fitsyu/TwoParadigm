@@ -18,14 +18,14 @@ class ShopTypesRepository: Repository {
             if self.memory.isEmpty {
                 
                 // load from disk
-                guard let plist = Bundle.main.path(forResource: "Data", ofType: "plist") else {
+                guard let plist = Bundle.main.url(forResource: "Data", withExtension: "plist") else {
                     let hint = "failed to open Data.plist"
                     reject(RepositoryError.Unknown(hint: hint))
                     return
                 }
                 
-                guard let dict  = NSDictionary(contentsOfFile: plist) else {
-                    let hint = "failed to load from Data.plist"
+                guard let dict  = NSDictionary(contentsOf: plist) else {
+                    let hint = "failed to load from \(plist)"
                     reject(RepositoryError.Unknown(hint: hint))
                     return
                 }
