@@ -1,0 +1,6 @@
+framework module Pods_TwoParadigm {
+  umbrella header "Pods-TwoParadigm-umbrella.h"
+
+  export *
+  module * { export * }
+}

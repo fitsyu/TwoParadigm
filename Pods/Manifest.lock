@@ -1,0 +1,38 @@
+PODS:
+  - NSelect (0.1.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+
+DEPENDENCIES:
+  - NSelect (from `https://github.com/fitsyu/NSelect.git`)
+  - RxCocoa
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  NSelect:
+    :git: https://github.com/fitsyu/NSelect.git
+
+CHECKOUT OPTIONS:
+  NSelect:
+    :commit: 5ffe27bb422114391a4e4227f90daa3f9a4c3c38
+    :git: https://github.com/fitsyu/NSelect.git
+
+SPEC CHECKSUMS:
+  NSelect: 4229074c635da63b3d3b94f7ec0081976b6505fb
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+
+PODFILE CHECKSUM: 1c0ea1c704115799fb6fb099ea2b8ba3c3a2f751
+
+COCOAPODS: 1.7.1
